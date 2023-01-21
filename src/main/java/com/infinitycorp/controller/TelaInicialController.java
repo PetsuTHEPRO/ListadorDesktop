@@ -8,6 +8,7 @@ package com.infinitycorp.controller;
 import com.infinitycorp.controller.helpers.TelaInicialHelper;
 import com.infinitycorp.model.DAO.ClientDAO;
 import com.infinitycorp.model.entity.Client;
+import com.infinitycorp.model.entity.CurrentUser;
 import com.infinitycorp.view.TelaInicial;
 
 public class TelaInicialController {
@@ -23,7 +24,7 @@ public class TelaInicialController {
     }
     
     public void updateDataProfile(){
-        //helper.setModelo(new ClientDAO().selectForUser(modeloClient));
+    	helper.setModelo(CurrentUser.getCurrentUser());
     }
     
     public void inicializeProgram(){

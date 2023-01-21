@@ -22,7 +22,7 @@ public class LoginController {
         
         Client clientModelo = helper.getModelo();
 
-        boolean cService = new ClientService().checkIfClientExists(clientModelo);
+        boolean cService =  new ClientService().authenticate(clientModelo.getUser(), clientModelo.getPassword());
         
         if(cService){
             TelaInicial menu = new TelaInicial(clientModelo);

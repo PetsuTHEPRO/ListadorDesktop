@@ -30,8 +30,7 @@ public class RegisterController {
     public void registerSystem(){
         
         Client clientController = helper.getModelo();
-
-        if(!new ClientService().checkIfClientExists(clientController)){
+        if(!clientService.checkIfClientExists(clientController.getUser())){
             if(clientService.registerSucess(clientController)){
                 showMessage("Cadastrado com sucesso!", Color.GREEN);
             }else{
@@ -47,9 +46,9 @@ public class RegisterController {
         
         if(!helper.checkIfFieldsIsEmpty()){
             this.registerSystem();
+        }else {
+            showMessage("Preenchar todos os campos!", Color.YELLOW);
         }
-        
-        showMessage("Preenchar todos os campos!", Color.YELLOW);
     }
     
     public void showMessage(String msg, Color cor){
