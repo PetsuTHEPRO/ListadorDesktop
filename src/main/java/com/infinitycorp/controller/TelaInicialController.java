@@ -7,7 +7,7 @@ package com.infinitycorp.controller;
 
 import com.infinitycorp.controller.helpers.TelaInicialHelper;
 import com.infinitycorp.model.DAO.ClientDAO;
-import com.infinitycorp.model.identity.Client;
+import com.infinitycorp.model.entity.Client;
 import com.infinitycorp.view.TelaInicial;
 
 public class TelaInicialController {

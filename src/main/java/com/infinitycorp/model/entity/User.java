@@ -1,4 +1,4 @@
-package com.infinitycorp.model.identity;
+package com.infinitycorp.model.entity;
 
 public class User {
    

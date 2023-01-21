@@ -6,7 +6,7 @@
 package com.infinitycorp.controller;
 
 import com.infinitycorp.controller.helpers.RegisterHelper;
-import com.infinitycorp.model.identity.Client;
+import com.infinitycorp.model.entity.Client;
 import com.infinitycorp.model.service.ClientService;
 import com.infinitycorp.view.Register;
 import java.awt.Color;
@@ -45,7 +45,7 @@ public class RegisterController {
     
     public void checkIfFieldsIsEmpty(){
         
-        if(helper.checkIfFieldsIsEmpty()){
+        if(!helper.checkIfFieldsIsEmpty()){
             this.registerSystem();
         }
         

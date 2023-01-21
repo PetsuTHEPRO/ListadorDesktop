@@ -5,7 +5,7 @@
  */
 package com.infinitycorp.controller.helpers;
 
-import com.infinitycorp.model.identity.Client;
+import com.infinitycorp.model.entity.Client;
 import com.infinitycorp.view.TelaInicial;
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -1,5 +1,5 @@
 
-package com.infinitycorp.model.identity;
+package com.infinitycorp.model.entity;
 
 import java.util.Date;
 

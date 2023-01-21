@@ -6,7 +6,8 @@
 package com.infinitycorp.view;
 
 import com.infinitycorp.controller.TelaInicialController;
-import com.infinitycorp.model.identity.Client;
+import com.infinitycorp.model.entity.Client;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;

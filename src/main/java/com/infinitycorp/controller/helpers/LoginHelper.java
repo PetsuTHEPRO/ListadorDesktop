@@ -1,6 +1,6 @@
 package com.infinitycorp.controller.helpers;
 
-import com.infinitycorp.model.identity.Client;
+import com.infinitycorp.model.entity.Client;
 import com.infinitycorp.view.Login;
 
 public class LoginHelper implements IHelper{

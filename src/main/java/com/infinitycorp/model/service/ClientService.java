@@ -2,14 +2,14 @@
 package com.infinitycorp.model.service;
 
 import com.infinitycorp.model.DAO.ClientDAO;
-import com.infinitycorp.model.identity.Client;
+import com.infinitycorp.model.entity.Client;
 
 public class ClientService {
     
     private final ClientDAO clientDAO;
   
     public ClientService() {
-          this.clientDAO = new ClientDAO();
+          this.clientDAO = new ClientDAO(HibernateUtil.getSessionFactory());
     }
     
     public boolean checkIfClientExists(Client client){
@@ -17,7 +17,7 @@ public class ClientService {
     }
     
     public boolean registerSucess(Client client){
-        return false;
+    	return clientDAO.save(client);
     }
     
 }

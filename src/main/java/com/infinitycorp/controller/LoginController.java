@@ -3,7 +3,7 @@ package com.infinitycorp.controller;
 
 import com.infinitycorp.view.Login;
 import com.infinitycorp.controller.helpers.LoginHelper;
-import com.infinitycorp.model.identity.Client;
+import com.infinitycorp.model.entity.Client;
 import com.infinitycorp.model.service.ClientService;
 import com.infinitycorp.view.TelaInicial;
 import java.awt.Color;
